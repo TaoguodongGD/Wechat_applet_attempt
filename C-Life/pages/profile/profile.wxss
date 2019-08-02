@@ -1,0 +1,87 @@
+/* pages/profile/profile.wxss */
+
+.margin {
+    margin: 30rpx;
+}
+
+.radius {
+    border-radius: 6rpx;
+}
+
+.shadow-blur {
+    position: relative;
+}
+
+.bg-gradual-green {
+    background-color: rgb(19, 223, 172);
+    background-image: var(--gradualGreen);
+    color: #fff;
+}
+
+.fillcontent {
+    height: 200rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.fillcontent image {
+    border-radius: 50%;
+    margin: auto;
+    height: 150rpx;
+    width: 150rpx;
+}
+
+.gif-black {
+    mix-blend-mode: screen;
+}
+
+.response {
+    width: 100%;
+}
+
+image[class*="gif-"] {
+    border-radius: 6rpx;
+    display: block;
+}
+
+image {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+
+
+/* content */
+
+.cells {
+    margin-top: 20rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+
+.cells .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20rpx 30rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+    background-color: #fff;
+    font-size: 30rpx;
+}
+
+.cells .item::after {
+    content: '';
+    display: inline-block;
+    height: 10rpx;
+    width: 10rpx;
+    border: 0 solid #ccc;
+    border-width: 3rpx 3rpx 0 0;
+    transform: matrix(1, 1, -1, 1, 0, 0);
+}
+
+.cells .divider {
+    height: 20rpx;
+    box-shadow: inset 0 1rpx 2rpx #eee;
+}

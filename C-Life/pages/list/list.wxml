@@ -1,0 +1,37 @@
+<!-- pages/list/list.wxml -->
+<!-- 搜索栏 -->
+<view class="cu-bar search bg-white">
+  <view class="search-form round">
+    <icon class="icon-search" size="15" type="search" role="img"></icon>
+    <input class="toinput" placeholder="搜索图片、文章、视频" value="{{searchText}}" bindinput="searchChangeHandle" bindconfirm="searchHandle" type="text"></input>
+    <view class="weuiclear" wx:if="{{searchText}}" bindtap="clearSearchHandle">
+      <icon type="clear" size="14"></icon>
+    </view>
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow-blur round button-hover" bindtap="searchHandle" role="button" aria-disabled="false">
+      搜索
+    </button>
+  </view>
+</view>
+<!-- 商品列表 -->
+<view class="listing">
+  <!-- 每个商户列表 -->
+  <navigator class="list-content" wx:for="{{shops}}" wx:key="id" url="/pages/detail/datail?item={{item.id}}">
+    <!-- 图标 -->
+    <image class="content-img" src="{{item.images[0]}}" mode="aspectFill"></image>
+    <!-- 文字内容 -->
+    <view class="content-text">
+      <text class="name">{{item.name}}</text>
+      <text class="phone">电话：{{item.phone || '无'}}</text>
+      <text class="address">地址：{{item.address}}</text>
+      <text class="businesshours">营业时间：{{item.businessHours}}</text>
+    </view>
+    <!-- 右侧评分 -->
+    <view class="score">{{item.score || '无'}}</view>
+  </navigator>
+</view>
+<view wx:if="{{hasMore}}" class="loadmaore">
+  <image class="loadmaore-gif" src="../../assets/gif/loadmore.gif"></image>
+</view>
+<view wx:else class="loadmaore">客官，没有更多了</view>

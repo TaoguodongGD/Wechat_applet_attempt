@@ -1,0 +1,163 @@
+/* pages/list/list.wxss */
+
+/* 搜索栏 */
+
+.bg-white {
+  background-color: RGB(23, 182, 109);
+  color: #666;
+}
+
+.cu-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 100rpx;
+  justify-content: space-between;
+}
+
+view, scroll-view, swiper, button, input, textarea, label, navigator, image {
+  box-sizing: border-box;
+}
+
+.cu-bar .search-form {
+  position: relative;
+  background-color: #f5f5f5;
+  line-height: 64rpx;
+  height: 64rpx;
+  font-size: 24rpx;
+  color: #666;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 20rpx;
+}
+
+.cu-bar .search-form input {
+  height: 64rpx;
+  line-height: 64rpx;
+  font-size: 26rpx;
+  width: 190px;
+  margin-left: 10px;
+}
+
+.action {
+  margin-right: 20rpx;
+}
+
+.round {
+  border-radius: 5000rpx;
+}
+
+.cu-btn.button-hover {
+  transform: translate(1rpx, 1rpx);
+}
+
+.cu-btn {
+  background-color: RGB(20, 206, 164);
+  color: #f5f5f5;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+}
+
+/* 删除图标 */
+
+.weuiclear {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 0;
+  right: 0;
+}
+
+icon {
+  top: 0;
+  right: 7px;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+}
+
+/* 搜索图标 */
+
+.cu-bar .search-form [class*="icon"] {
+  margin: 0 2em 0 0.5em;
+}
+
+.icon-search {
+  height: 34rpx;
+  width: 40rpx;
+}
+
+/* 列表 */
+
+.list-content {
+  box-sizing: border-box;
+  position: relative;
+  height: 180rpx;
+  padding: 10rpx;
+  border-top: 1px solid rgb(143, 139, 139);
+  overflow: hidden;
+}
+
+.content-img {
+  height: 160rpx;
+  width: 160rpx;
+  line-height: 160rpx;
+  background-color: green;
+  float: left;
+}
+
+.content-text {
+  float: left;
+  width: 550rpx;
+  margin-left: 10rpx;
+}
+
+.content-text text {
+  display: block;
+}
+
+.name {
+  font-size: 30rpx;
+}
+
+.phone, .address, .businesshours {
+  font-size: 25rpx;
+  color: #868686;
+}
+
+.score {
+  position: absolute;
+  width: 55rpx;
+  height: 35rpx;
+  color: white;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 35rpx;
+  background-color: red;
+  border-radius: 5000rpx;
+  right: 10rpx;
+}
+
+/* 正在加载 */
+
+.loadmaore {
+  width: 100%;
+  height: 28px;
+  background-color: #f8f8f8;
+  color: #b8afaf;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 28px;
+}
+
+.loadmaore-gif {
+  display: block;
+  width: 100px;
+  height: 28px;
+  margin: 0 auto;
+}

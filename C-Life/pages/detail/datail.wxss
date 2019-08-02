@@ -1,0 +1,122 @@
+/* pages/detail/datail.wxss */
+
+.slides {
+    height: 450rpx;
+}
+
+.heading {
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+    padding-bottom: 18rpx;
+    background-color: #fff;
+}
+
+.heading text {
+    display: block;
+}
+
+.heading-name {
+    font-size: 33rpx;
+    color: black;
+}
+
+.heading-bot {
+    font-size: 27rpx;
+    color: rgb(119, 119, 121);
+}
+
+
+/* .container {
+    margin-top: 15rpx;
+    padding: 15rpx;
+    background-color: #fff;
+    font-size: 24rpx;
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 8rpx;
+    flex-direction: column;
+    border-bottom: 0.5px solid rgb(236, 235, 235);
+}
+
+.container-else {
+    padding: 22rpx;
+    color: rgb(110, 105, 105);
+    font-size: 30rpx;
+}
+
+.comments-name {
+    margin-top: 20rpx;
+    font-size: 36rpx;
+}
+
+.commments-date {
+    align-self: flex-end;
+    color: #567;
+}
+
+.comments-rating {
+    position: absolute;
+    top: 20rpx;
+    right: 10rpx;
+    color: #f5331a;
+}
+
+.comments .item image {
+    width: 110rpx;
+    height: 110rpx;
+    margin: 10rpx;
+}
+
+.comments-content {
+    color: rgb(87, 90, 92);
+} */
+
+.comments {
+    margin-top: 20rpx;
+    padding: 20rpx;
+    background-color: #fff;
+    color: #345;
+    font-size: 24rpx;
+}
+
+.comments .item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+.comments .item .name {
+    margin-top: 20rpx;
+    font-size: 36rpx;
+}
+
+.comments .item .date {
+    align-self: flex-end;
+    margin: -40rpx 0 20rpx;
+    color: #567;
+}
+
+.comments .item .rating {
+    position: absolute;
+    top: 20rpx;
+    right: 10rpx;
+    color: #ee523d;
+}
+
+.comments .item image {
+    width: 110rpx;
+    height: 110rpx;
+    margin: 10rpx;
+}
+
+.container-else {
+    padding: 15rpx;
+    font-size: 28rpx;
+    color: rgb(72, 75, 75);
+}
