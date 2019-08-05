@@ -1,0 +1,2 @@
+<!--pages/chat/chat.wxml-->
+<image class="bg" src="../../assets/image/chat.jpg" mode="aspectFill"></image>

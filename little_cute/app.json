@@ -1,0 +1,28 @@
+{
+    "pages": [
+        "pages/beauty/beauty",
+        "pages/chat/chat"
+    ],
+    "window": {
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "color": "#D5D5D5",
+        "selectedColor": "#FFFFFF",
+        "backgroundColor": "#2C2C2B",
+        "list": [{
+                "pagePath": "pages/beauty/beauty",
+                "text": "测颜值",
+                "iconPath": "/assets/icon/beauty.png",
+                "selectedIconPath": "/assets/icon/beautyfill.png"
+            },
+            {
+                "pagePath": "pages/chat/chat",
+                "text": "聊一聊",
+                "iconPath": "/assets/icon/chat.png",
+                "selectedIconPath": "/assets/icon/chatfill.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}
